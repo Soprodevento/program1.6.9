@@ -6,7 +6,7 @@ public class Main {
     }
     public static boolean isPalindrome(String text) {
         text = text.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
-        return text.equals(new StringBuffer().append(text).reverse().toString());
+        return text.equals(new StringBuilder(text).reverse().toString());
     }
 
 }
